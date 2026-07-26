@@ -73,6 +73,14 @@ kableExtra, with striped rows, a repeated header on every page, and fixed
 column widths (landscape orientation, small font since these are wide data
 tables). A couple of things to know:
 
+- **Forced to `pdf-engine: pdflatex`.** Both pages set this explicitly in their
+  YAML. Without it, Quarto defaults to `lualatex`, which crashes on some older
+  system-wide TeX Live installs (specifically TeX Live 2018) with a
+  `microtype.lua: attempt to call field 'warning' (a nil value)` error —
+  a known incompatibility between that TeX Live version's `microtype` package
+  and its bundled LuaTeX. `pdflatex` doesn't use microtype's Lua module at
+  all, so it sidesteps the bug entirely. If you ever see that specific error
+  again, this setting is the fix.
 - **PDF rendering needs LaTeX.** If you don't already have it, install
   [TinyTeX](https://quarto.org/docs/output-formats/pdf-engine.html) once via
   the R console:

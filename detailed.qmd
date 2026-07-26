@@ -4,349 +4,60 @@ subtitle: "Every aquatic-ecology talk and poster, sorted by date/time/room"
 format:
   html:
     df-print: paged
+  pdf:
+    pdf-engine: pdflatex
+    geometry:
+      - landscape
+      - margin=0.4in
+    fontsize: 8pt
+    toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
 
+Salt Lake City, UT | July 26–30, 2026 | All times MDT
 
-Salt Lake City, UT | July 26-30, 2026 | All times MDT
+::: {.content-visible when-format="html"}
+[Download a printable PDF version](detailed.pdf)
+:::
 
-This schedule pulls every individual talk/poster/presentation from the ESA 2026 program whose title (or parent session title) touches on **aquatic ecology**: marine, coastal, wetlands, lakes, rivers/streams, estuaries, freshwater, and closely related topics (e.g. fish/fisheries, kelp, coral reefs, riparian zones, limnology). Sorted by date, time, room, and then title/author. Entries still marked "CANCELLED" in the original program are left as-is so you can see what was pulled from the schedule.
+Every individual talk/poster from the ESA 2026 program matching aquatic ecology (marine, coastal, wetlands, lakes, rivers/streams, estuaries, freshwater, and related topics). Sorted by date, time, room, and title. Entries still marked "CANCELLED" in the original program are left as-is.
 
-**Total talks/posters found: 335**
+```{r}
+library(readr)
+library(knitr)
+library(kableExtra)
 
-| Date | Time | Location | Session | Title | Presenting Author(s) |
-|---|---|---|---|---|---|
-| Mon, Jul 27 | 1:30 PM-1:45 PM | 251D | COS 009 | COS 009-01 - A multi-scale framework for integrated floodplain forest monitoring, research, and modeling in the Upper Mississippi River System | Shelby Weiss |
-| Mon, Jul 27 | 1:30 PM-1:45 PM | 251E | COS 004 | COS 004-01 - CANCELLED: Lessons on trends and drivers of pika distribution, density, and physiological stress in a nationally unique mesocosm, the Columbia River Gorge | Erik Beever |
-| Mon, Jul 27 | 1:30 PM-1:45 PM | 255B | COS 013 | COS 013-01 - Decoupling of wetland and upland vegetation trends across continental US | Xiaonan Tai |
-| Mon, Jul 27 | 1:45 PM-2:00 PM | 251A | COS 012 | COS 012-02 - Extreme trophic niche partitioning supports coexistence and biomass production across a diverse marine food web | Jordan Casey |
-| Mon, Jul 27 | 1:45 PM-2:00 PM | 255B | COS 013 | COS 013-02 - Lets talk about Phragmites australis: common reed persistence and nonnative arrival along the dam-regulated Colorado River | Emily Palmquist |
-| Mon, Jul 27 | 2:00 PM-2:15 PM | 255B | COS 013 | COS 013-03 - Plants are a strong proxy for salt marsh CO2 and CH4 fluxes across local, regional, and global scales | Emily Wilson |
-| Mon, Jul 27 | 2:15 PM-2:30 PM | 250E | COS 011 | COS 011-04 - Investigating the seagrass rhizosphere and sediment microbiome in a fragmented meadow: do microbial influences dictate seagrass colonization? | Olivia Fletcher |
-| Mon, Jul 27 | 2:15 PM-2:30 PM | 251C | COS 002 | COS 002-04 - Viviparity in salty landscapes: the osmoregulatory responses of Neotropical livebearer fishes | ANA PETRY |
-| Mon, Jul 27 | 2:15 PM-2:30 PM | 251E | COS 004 | COS 004-04 - Out of Sight, Out of Mind? Psychological Distance and Public Perceptions of Great Salt Lake | Nathan Thompson |
-| Mon, Jul 27 | 2:15 PM-2:30 PM | 255A | COS 010 | COS 010-04 - Ecohydrology-informed machine learning and GeoAI for habitat classification and forecasting in dynamic floodplains | Rabindra Parajuli |
-| Mon, Jul 27 | 2:15 PM-2:30 PM | 255B | COS 013 | COS 013-04 - Advancing Wetland Vegetation Monitoring in Central Florida Using a High-Resolution Foundational CNN Framework | Fiona Benzi |
-| Mon, Jul 27 | 2:30 PM-2:45 PM | 251C | COS 002 | COS 002-05 - Evaluating the Ecology of Dinoflagellate Blooms in a Changing Estuary, the Indian River Lagoon | Paige Aldred |
-| Mon, Jul 27 | 2:30 PM-2:45 PM | 255A | COS 010 | COS 010-05 - Restoring function in arid wetlands: evidence from 90 years of change at Cebolla Creek amid southwestern drought | Roy Petrakis |
-| Mon, Jul 27 | 2:30 PM-2:45 PM | 255B | COS 013 | COS 013-05 - Scaling Teal Carbon Wetlands as Natural Climate Solutions: Carbon Storage Potential, Emission Trade-offs and Ecosystem Resilience | Shubham Kumar |
-| Mon, Jul 27 | 2:45 PM-3:00 PM | 255B | COS 013 | COS 013-06 - Leveraging integrated wetland management to co-manage wetlands for the biological control of mosquitoes and wildlife conservation | John Veon |
-| Mon, Jul 27 | 3:30 PM-3:45 PM | 250F | COS 015 | COS 015-01 - Casting for coverage: Fly-fishing citizen science to enhance bioassessment in the Brazos River, Texas | Holli Grant |
-| Mon, Jul 27 | 3:30 PM-3:45 PM | 251C | COS 021 | COS 021-01 - Assessing the Impact of BTTAP Enclosures on Forest Regeneration Dynamics in Besham Watershed Division, Shangla Pakistan | Majid Ullah |
-| Mon, Jul 27 | 3:30 PM-3:45 PM | 255B | COS 028 | COS 028-01 - Ecosystem Water Use Efficiency of Geographically Isolated Wetlands in The Dougherty Plain of Southwest, GA | Carlie Blackburn |
-| Mon, Jul 27 | 3:45 PM-4:00 PM | 250F | COS 015 | COS 015-02 - Insights from a decade of gross primary productivity estimation in a large, regulated river | Lindsay Hansen |
-| Mon, Jul 27 | 3:45 PM-4:00 PM | 251A | COS 027 | COS 027-02 - Habitat mosaics and fish biodiversity underpin nutrient provisioning in a socio-ecological system | Simon Brandl |
-| Mon, Jul 27 | 3:45 PM-4:00 PM | 251F | COS 018 | COS 018-02 - Plant species diversity mitigates catastrophic ecosystem loss following repeated disturbance events in the mangrove-marsh ecotone | Anna Armitage |
-| Mon, Jul 27 | 3:45 PM-4:00 PM | 255B | COS 028 | COS 028-02 - Dispersal limitation constrains mangrove forest expansion into herbaceous saltmarsh in a subtropical coastal wetland | Cassandra Campbell |
-| Mon, Jul 27 | 4:00 PM-4:15 PM | 250A | COS 017 | COS 017-03 - CANCELLED: Differential vulnerability to critical transitions across marine and terrestrial ecosystems | Joan Dudney |
-| Mon, Jul 27 | 4:00 PM-4:15 PM | 250C | COS 019 | COS 019-03 - When Paleontology Meets Wildlife Science: Mammalian Censuses Through Time in the Bear River Range | Auriana Dunn |
-| Mon, Jul 27 | 4:00 PM-4:15 PM | 250F | COS 015 | COS 015-03 - Using multi-scale spatial models of dendritic ecosystems to infer abundance of a stream salmonid | Xinyi Lu |
-| Mon, Jul 27 | 4:00 PM-4:15 PM | 251B | COS 020 | COS 020-03 - Endangered suckers nearing extirpation in Upper Klamath Lake | Jacob Krause |
-| Mon, Jul 27 | 4:00 PM-4:15 PM | 251D | COS 022 | COS 022-03 - Coral reef habitat geometry shapes reef fish biodiversity across biogeographic regions | Kyra Jean Cipolla |
-| Mon, Jul 27 | 4:00 PM-4:15 PM | 255B | COS 028 | COS 028-03 - Invasive ecosystem engineers in coastal wetlands: Biological traits, evolutionary dynamics, and anthropogenic drivers of invasion | Mei Chen |
-| Mon, Jul 27 | 4:00 PM-4:15 PM | Grand Ballroom H | OOS 03 | OOS 03-03 - Fire Effects on Streamflow in the Southwestern United States | Gavin Madakumbura |
-| Mon, Jul 27 | 4:15 PM-4:30 PM | 250F | COS 015 | COS 015-04 - Phytomediation potential of native floating wetlands for nutrients and heavy metal removal in Kasan river, Bhaktapur, Nepal | Meera Prajapati |
-| Mon, Jul 27 | 4:15 PM-4:30 PM | 251A | COS 027 | COS 027-04 - Prey utilization of a dominant coastal space-occupier: dynamics of digestion | Angela Ho |
-| Mon, Jul 27 | 4:15 PM-4:30 PM | 255B | COS 028 | COS 028-04 - Sulfate-reducing bacteria drive dark carbon fixation in wetlands | Ruiyang Li |
-| Mon, Jul 27 | 4:30 PM-4:45 PM | 250F | COS 015 | COS 015-05 - Seasonal immigration of juvenile masu salmons into a spring-fed tributary estimated using otolith Sr isotope ratios | Masaru Sakai |
-| Mon, Jul 27 | 4:30 PM-4:45 PM | 255B | COS 028 | COS 028-05 - Effects of Prescribed Fire on Restored Tidal Marshes in the Mid-Atlantic | Amanda Schwark |
-| Mon, Jul 27 | 4:45 PM-5:00 PM | 250F | COS 015 | COS 015-06 - Testing metabolic cold adaptation in high- and low-elevation pairs of benthic and pelagic montane fishes | Jacob Woodlief |
-| Mon, Jul 27 | 4:45 PM-5:00 PM | 255B | COS 028 | COS 028-06 - Assessing wetland ecosystems as natural climate solutions through applied deep learning and regional-scale field sampling of greenhouse gas fluxes and carbon burial | Anthony Stewart |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 02 | PS 02-024 - Highly mobile salmonids: A mechanism for consumer coexistence | Jill Olin |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 04 | PS 04-036 - Nature observations and vehicle observations are inversely related for 5-minute sound surveys at neighborhood, periurban, and rural locations near creeks and streams. | Alexis Heinz |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 04 | PS 04-040 - Migration as a spatial and temporal ecological process shaped by connectivity in Amazonian freshwater fishes | Stephannie Fernandes |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 05 | PS 05-044 - CANCELLED: Host physiological variation in a wild reservoir of Sin Nombre virus | Nelle Jenkins |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 05 | PS 05-045 - Six decades of monitoring provide critical context for an avian influenza outbreak in marine mammals | Esin Ickin |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 05 | PS 05-046 - Relating human schistosomiasis infection risk to associations between snail intermediate host ecology and water hyacinth in Lake Victoria, Kenya | Maya Ardon |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 06 | PS 06-063 - Exploring nitrogen cycling resilience: Assessing soil microbial responses in Phragmites-dominated wetlands under stress conditions | Madison Brown |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 07 | PS 07-069 - The Pedogenic Carbon Pump drives millennium-scale carbon sequestration in reclaimed coastal landscapes | Honghua Ruan |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 07 | PS 07-071 - Exceedance Probability of Change Rates Reveals Future Hydro-ecological Risks in Mountain Wetlands | Jiyu Seo |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 07 | PS 07-074 - ?Analysis of Drought Responses of Riparian Vegetation Using Remote Sensing Indices | Yeonggyo Jo |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 10 | PS 10-090 - Quantifying marine biogeographic transition zones. | Joseph Kesler |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 10 | PS 10-091 - Revealing the abundance of mixoplankton in coastal waters by integrating lysozyme staining and flow cytometry | Chi Hung Tang |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 10 | PS 10-092 - Illuminating abyssal scavenger communities in the Cook Islands (South Pacific) | Leanne De Leon |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 10 | PS 10-093 - Does a Dominant Prey Resource Lead to Food Web Stability in the Seasonal New York Bight? | Elizabeth Jahn |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 10 | PS 10-094 - Classifying coastal benthic environments from shallow to mesophotic depths | Haden Penrod |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 11 | PS 11-105 - Assessing sampling effort required to detect self-sustaining dynamics in a long-lived, threatened lake sucker | Phoebe Brown |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 13 | PS 13-129 - Assessing the influences of hydrology, water quality, and vegetation cover on California Red-Legged Frog (Rana Draytonii) in Redwood Creek, Marin County, CA | Tracy Benning |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 13 | PS 13-138 - CANCELED: Hydro-Geomorphic Position with Multi-Sensor Time-Series Analytics (GGE and Remote Sensing) for Riparian Sustainability Assessment Across Florida River Corridors | Olusola-Ige Adetoro |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 14 | PS 14-143 - Estimating ecosystem function, structure, and services in carbon-restored wetlands | Mel Baldino |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 14 | PS 14-144 - Influence of climate drivers on growth and survivorship of western redcedar (Thuja plicata) and adaptive management species in riparian restoration in Northwest Washington | Ash Micklewright |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 14 | PS 14-146 - Avian Biodiversity: Evaluating Riparian Restoration Success in Arid Urban Environments | Diego Montes |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 14 | PS 14-149 - CANCELLED: Restoration shapes eastern oyster metapopulation dynamics in Oyster Bay-Cold Spring Harbor. | Tanvi Jain |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 15 | PS 15-170 - CANCELLED: Urbanization alters sulfur-cycling genes and microbial diversity without changing sulfur bioavailability in inland wetland soils | Ping Zhong¹ |
-| Mon, Jul 27 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 15 | PS 15-171 - Ecological Restoration Planning of an Urban Stream and Wetland Complex in Colorado using Functional and Conditional Assessments | Savannah Hyndman |
-| Tue, Jul 28 | 8:00 AM-8:15 AM | 250F | COS 029 | COS 029-01 - Can reducing irrigation improve water temperatures for coldwater fish in the Klamath River Basin? | Eli Asarian |
-| Tue, Jul 28 | 8:00 AM-8:15 AM | 251A | COS 039 | COS 039-01 - Priority effects and perennial community establishment limit the invasion of Humulus japonicus in riparian ecosystems | Haeji Shin |
-| Tue, Jul 28 | 8:00 AM-8:15 AM | Grand Ballroom J | OOS 05 | OOS 05-01 - Differential vulnerability to critical transitions across marine and terrestrial ecosystems | Joan Dudney |
-| Tue, Jul 28 | 8:15 AM-8:30 AM | 250F | COS 029 | COS 029-02 - Five Years of Bacterial Community Composition in the Lower Hudson River with Nanopore Sequencing | Ilana Cohen |
-| Tue, Jul 28 | 8:30 AM-8:45 AM | 250F | COS 029 | COS 029-03 - Effects of extreme low and high stream flows on the use of different types of riparian fruit fall by macroinvertebrates in tropical stream food webs | Alan Covich |
-| Tue, Jul 28 | 8:30 AM-8:45 AM | 251D | COS 035 | COS 035-03 - Plastic pollution as novel habitat for freshwater snail hosts of schistosomiasis | Kaitlyn Mitchell |
-| Tue, Jul 28 | 8:30 AM-8:45 AM | Grand Ballroom J | OOS 05 | OOS 05-03 - What, like it's hard to monitor reefs? Mapping common coral reef monitoring metrics to ongoing community change. | Joseph Townsend |
-| Tue, Jul 28 | 8:45 AM-9:00 AM | 250F | COS 029 | COS 029-04 - Ecological Interactions Sustain Toxic Microcoleus Blooms Under Nitrogen Limitation | Ramesh Goel |
-| Tue, Jul 28 | 8:45 AM-9:00 AM | Grand Ballroom J | OOS 05 | OOS 05-04 - Resilience and Collapse: Kelp Forest Responses to the 20142016 Marine Heatwave | Kyle Cavanaugh |
-| Tue, Jul 28 | 9:00 AM-9:15 AM | 250A | COS 032 | COS 032-05 - Modeling microbial regulation of CH? cycling under warming and drought in a temperate peatland | Jingwei Zhang |
-| Tue, Jul 28 | 9:00 AM-9:15 AM | 250E | COS 030 | COS 030-05 - Deterministic or Stochastic? Assembly Rules Shaping Cryptobenthic Reef Fish Communities in the Great Caribbean | Mariana R.-Higueras |
-| Tue, Jul 28 | 9:00 AM-9:15 AM | 250F | COS 029 | COS 029-05 - CANCELLED: Influence of physical factors on crenobiontic species distribution in springs in the Eastern Great Basin, USA. | John Umek |
-| Tue, Jul 28 | 9:15 AM-9:30 AM | 255A | COS 041 | COS 041-06 - Resistance and resilience of Texas mangroves to two major disturbances | Jennifer Ruiz |
-| Tue, Jul 28 | 10:00 AM-10:15 AM | 250F | COS 043 | COS 043-01 - Evaluation of habitat suitability and assessment of the invasion risk of water hyacinth (Eichhornia crassipes) in global freshwater ecosystems | Pradeep Adhikari |
-| Tue, Jul 28 | 10:00 AM-11:30 AM |  |  | Hydrological reduction, connectivity loss, and freshwater fish biodiversity in the Neotropics | Ana Carolina Prado-Valladares |
-| Tue, Jul 28 | 10:15 AM-10:30 AM | 250F | COS 043 | COS 043-02 - Thermal guild fidelity in a warming world: evidence of both specialization and flexibility in temperate lake fish | Montana Airey |
-| Tue, Jul 28 | 10:15 AM-10:30 AM | 251F | COS 047 | COS 047-02 - CANCELLED: Disturbance legacies constrain post-fire vegetation recovery in hydrology-restored tropical peat swamp forests | Erich Eberhard |
-| Tue, Jul 28 | 10:30 AM-10:45 AM | 250F | COS 043 | COS 043-03 - Evaluating variance-based early warning of harmful algal blooms in unmanipulated lakes. | Tamar Atwell |
-| Tue, Jul 28 | 10:30 AM-10:45 AM | 251F | COS 047 | COS 047-03 - Environmental disequilibrium in Canadian freshwater bioindicator communities | Cindy Gao |
-| Tue, Jul 28 | 10:45 AM-11:00 AM | 250F | COS 043 | COS 043-04 - Linking benthic invertebrate communities to nutrient availability and ecosystem metabolism in ponds | Charlotte Narr |
-| Tue, Jul 28 | 11:00 AM-11:15 AM | 250F | COS 043 | COS 043-05 - Habitat preferences and settlement of larval midges in Iceland | Isabelle Relyea |
-| Tue, Jul 28 | 11:15 AM-11:30 AM | 250B | COS 051 | COS 051-06 - Escalating Chemical Defenses Across an Oceanic Island Chain: Evidence from the Largest Island Plant Radiation | Christopher Sorich |
-| Tue, Jul 28 | 11:15 AM-11:30 AM | 250F | COS 043 | COS 043-06 - Arctic zooplankton demonstrate response diversity to shared environmental changes among lakes | Timothy Walsworth |
-| Tue, Jul 28 | 11:15 AM-11:30 AM | 251A | COS 052 | COS 052-06 - Macrophyte invasion and removal coincide with shifts in soil microbial communities and nitrogen cycling in wetlands | Rachel Wood |
-| Tue, Jul 28 | 1:30 PM-1:45 PM | 250F | COS 057 | COS 057-01 - CANCELLED: Incorporating multiple spatial data sources for submerged aquatic vegetation delineation. | Brady Dillingham |
-| Tue, Jul 28 | 1:30 PM-1:50 PM | Grand Ballroom D | SYMP 05 | SYMP 05-01 - Chains, Links, and Chestnut: Reconstructing Forest and Wetland Communities at Onondaga Lake using Land Survey Data | Abby Guinan |
-| Tue, Jul 28 | 1:45 PM-2:00 PM | 250F | COS 057 | COS 057-02 - Anoxia-associated oxythermal habitat compression elevates mercury in a cold-water lake fish | Stephen Jane |
-| Tue, Jul 28 | 1:45 PM-2:00 PM | 251B | COS 068 | COS 068-02 - Terrestrial vs aquatic bladderworts: systematic differences in trap morphology have limited impact on the hydrodynamics of suction flows | Nari Chang |
-| Tue, Jul 28 | 1:45 PM-2:00 PM | 251E | COS 063 | COS 063-02 - Relational Values and Community Meanings of the River and Water in Arizona in the context of Ecosystem Services | Edauri Navarro-Perez |
-| Tue, Jul 28 | 1:50 PM-2:10 PM | Grand Ballroom D | SYMP 05 | SYMP 05-02 - Natural Regeneration of Baldcypress (Taxodium distichum) in the swamps of the Lumbee River under changing flooding regimes | Aaron Hagman |
-| Tue, Jul 28 | 2:00 PM-2:15 PM | 250A | COS 061 | COS 061-03 - Rapid response of phytoplankton community to environmental temperature change | Eric Jiang |
-| Tue, Jul 28 | 2:00 PM-2:15 PM | 250E | COS 058 | COS 058-03 - Bioacoustic Diversity of Mangrove Forests in The Gambia | Alison Styring |
-| Tue, Jul 28 | 2:00 PM-2:15 PM | 250F | COS 057 | COS 057-03 - Environmental DNA reveals patterns of seasonal fish movements in temperate lakes | Nicolas Locatelli |
-| Tue, Jul 28 | 2:10 PM-2:30 PM | Grand Ballroom D | SYMP 05 | SYMP 05-03 - Indigenous River Science in the Oswego River Watershed | Catherine Landis |
-| Tue, Jul 28 | 2:15 PM-2:30 PM | 250E | COS 058 | COS 058-04 - Integrating NEON freshwater biodiversity data with theoretical food-web models to understand network resilience to environmental variability | Minyoung Lee |
-| Tue, Jul 28 | 2:15 PM-2:30 PM | 250F | COS 057 | COS 057-04 - Variations in water chemistry and salinity at terminal lakes across the Great Basin, 2023 to 2025 | Christine Rumsey |
-| Tue, Jul 28 | 2:30 PM-2:45 PM | 250F | COS 057 | COS 057-05 - Crunchy on the outside, chewy on the inside: C:N ratios are remarkably consistent between dragonfly exuviae and emergent adults | Karen Gaines |
-| Tue, Jul 28 | 2:30 PM-2:45 PM | Grand Ballroom I | OOS 13 | OOS 13-05 - N2:Ar saturation ratios quantify the relative role of nitrogen fixation and denitrification across experimental nutrient enrichment gradients in shallow lakes. | Jason Taylor |
-| Tue, Jul 28 | 2:45 PM-3:00 PM | 250A | COS 061 | COS 061-06 - Thermal landscape geometry constrains marine community turnover under climate warming | Jiwei Yang |
-| Tue, Jul 28 | 2:45 PM-3:00 PM | 251B | COS 068 | COS 068-06 - Modeling Dynamics of Kelp Forests Along the West Coast: Integrating Environmental and Anthropogenic Drivers | Jingjing (Tina) Tao |
-| Tue, Jul 28 | 2:45 PM-3:00 PM | 251F | COS 062 | COS 062-06 - Mapping coastal vegetation to evaluate salt marsh decline from 2016 to 2025 in South Carolina, USA | Zak Bartholomew |
-| Tue, Jul 28 | 3:30 PM-3:45 PM | 250C | COS 077 | COS 077-01 - CANCELLED: Linking long-term resilience, phenotypic variability, and population genetics in the long- term dynamics of seagrass | Nahaa Alotaibi |
-| Tue, Jul 28 | 3:30 PM-3:45 PM | 250E | COS 080 | COS 080-01 - Projected decline of habitat refugia for red abalone (Haliotis rufescens) across California | Jessica Bolin |
-| Tue, Jul 28 | 3:30 PM-3:45 PM | 250F | COS 071 | COS 071-01 - Quality, then quantity: Determinants of autochthony in freshwater food webs | Juliana Leal |
-| Tue, Jul 28 | 3:45 PM-4:00 PM | 250E | COS 080 | COS 080-02 - Seasonality of marine resources in the diets of mesocarnivores in a southern California preserve | Charles Braman |
-| Tue, Jul 28 | 3:45 PM-4:00 PM | 250F | COS 071 | COS 071-02 - Plant-insect interactions with plant sex influence early successional detrital systems | Carri LeRoy |
-| Tue, Jul 28 | 3:45 PM-4:00 PM | 251B | COS 081 | COS 081-02 - Effects of buffering life history strategies on population outcomes under environmental stochasticity: An example in kelp and marine heatwaves | Mei Blundell |
-| Tue, Jul 28 | 4:00 PM-4:15 PM | 250E | COS 080 | COS 080-03 - Assessing the impacts of human trampling on two common sea anemone species (Anthopleura elegantissima and A. sola) found in southern California rocky intertidal zones | Sandra Dansereau |
-| Tue, Jul 28 | 4:00 PM-4:15 PM | 250F | COS 071 | COS 071-03 - Drought degrades riparian subsidy quality and constrains aquatic ecosystem functioning | Rose Mohammadi |
-| Tue, Jul 28 | 4:15 PM-4:30 PM | 250E | COS 080 | COS 080-04 - Coastal shrub encroachment potentially slowed by long term salinization of barrier island water table. | Edward Long |
-| Tue, Jul 28 | 4:15 PM-4:30 PM | 250F | COS 071 | COS 071-04 - Adopting a land-sea interface approach to link terrestrial and marine habitats of large marine vertebrates | Stuart Negus |
-| Tue, Jul 28 | 4:30 PM-4:45 PM | 250E | COS 080 | COS 080-05 - Cross-latitude population comparisons of energetic and reproductive investment of purple sea urchins in marine heat wave conditions | Maya Munstermann |
-| Tue, Jul 28 | 4:30 PM-4:45 PM | 250F | COS 071 | COS 071-05 - When rivers thrive, birds respond: cross-ecosystem biodiversity linkages across continental landscapes | Christian Schuerings |
-| Tue, Jul 28 | 4:45 PM-5:00 PM | 250E | COS 080 | COS 080-06 - A multimodal approach for understanding the bioregionality of pelagic species moving through the Hermandad Marine Reserve (Galapagos, Ecuador) | Diego Urquia |
-| Tue, Jul 28 | 4:45 PM-5:00 PM | 250F | COS 071 | COS 071-06 - Evaluating virtual fencing effects on riparian zones and streams in tallgrass prairies | Madison Moriello |
-| Tue, Jul 28 | 4:45 PM-5:00 PM | 251A | COS 083 | COS 083-06 - Natural Metal Outcrops as Reservoirs of Pre-Adapted Species for Dryland Phytostabilization | Tomasz Wlodarczyk |
-| Tue, Jul 28 | 4:45 PM-5:00 PM | 255A | COS 082 | COS 082-06 - Impacts of variable food availability on zooplankton energetics, growth and reproduction | Grace Westphal |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 17 | PS 17-001 - Responses of freshwater phytoplankton to emerging contaminants in laboratory microcosms: a screening tool facilitating undergraduate research engagement | Kathryn Cottingham |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 17 | PS 17-002 - Using Dark Diversity' to investigate nutrient drivers in a large, arid reservoir | Todd Tietjen |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 17 | PS 17-003 - Climate-associated reductions in water volume alter bottom-up and top-down processes in a fishless Amazonian pond | Vinicius Farjalla |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 17 | PS 17-004 - Hunger in a heatwave: phytoplankton nutrient status measurements under different temperature and nutrient regimes | Rebecca North |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 17 | PS 17-005 - Climate Change and Declines in Lake Extent Drive Water Quality Shifts in 23 Great Basin Saline Lakes | Hannah Meier |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 17 | PS 17-006 - The Roles of Cyanobacteria and Eukaryotic Algal Competition Dynamics Within Utah Lakes Regime Shift | Christian Demarco |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 17 | PS 17-007 - Comparative Analysis of the Influence of Reservoir Structure and Traits on Biological Communities: Assessment of Species Diversity, Growth, and Trophic Structure in Freshwater Communities of Las Curias Reservoir and Isabela Retention Pon | Angel Estruche-Santos |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 17 | PS 17-008 - Hydrological Stability and Pond Type Affect Waterbird Use of Agricultural Irrigation Ponds | Chulmin Yeom |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 17 | PS 17-009 - Phosphorus availability, not sulfate concentration, predicts Northern wild rice occurrence in Iron Range Lakes | Philip Green |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-010 - STUDIES ON THE MAJOR CHARACTERISTICS OF THE KARATOA RIVER AT SHAHJADPUR AND ITS FISHERIES | Bijoy Kumar Ghosh |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-011 - Population dynamics of veliidae (Hemiptera) in urban and rural neotropical streams in Cayey, Puerto Rico | Christopher Orozco-Gonzalez |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-012 - Evaluating barrier effects on migratory aquatic fauna and restoration potential of a low-head dam in a tropical montane headwater stream | Julio Campis-Díaz |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-013 - Methane dominance in greenhouse gas emissions from human-impacted river systems: A cross-regional comparison | Ji-Hyung Park |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-014 - Inferring ecologically important species in spatial co-occurrence networks and their vulnerability to global change factors | Luc Lowry |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-015 - Implementation of the First Aquatic Invasive Species TMDL in California | Samantha Barchet |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-016 - Statistical vs ecological significance: A reflection on experimental nutrient and grazer manipulations and their effects on algal assemblages in freshwater environments | Harris Krasner |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-017 - Anthropogenic Pollutants: Is the Tropical Freshwater Fauna at Risk? | OMAR PEREZ-REYES |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-018 - Species dynamics and potential invasion in the restored streams of East Maui | Hannah Breinholt |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-019 - Surveying Riparian Plant Diversity in Restored, Preserved and Degraded Areas Along the Jordan River in Utah | Jackson Boden |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-020 - Pharmaceutical persistence from wastewater treatment plant effluent to Utah Lake: Environmental drivers of contaminant degradation | Sarah Cole |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-021 - Multilevel Responses to Tio? Exposure: Behavioral Modulation And Immune Activation In Tropical Shrimp | Anthony Martir |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-022 - Sublethal Impacts of Ibuprofen on Xiphocaris elongata: Physiological and Water Quality Responses | Eimy Gómez Rivera |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-023 - Bioacoustic Monitoring to Evaluate Biodiversity in a Tropical River: A Comparative Analysis with Historical Baselines | Roberto Martinez |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-024 - CANCELLED: Assessing riparian buffer efficacy for nutrient retention using the Visualizing Ecosystem Land Management Assessments (VELMA) model | Taylor Held |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 18 | PS 18-025 - Seeking sentinels of change in southwestern streams: are species occurrence data up to the task? | Max Smith |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 19 | PS 19-026 - Simulating the impacts of temperature and elevated CO2 on ecosystem productivity and greenhouse gas emissions in a peatland ecosystem | Jaekedah Christian |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 19 | PS 19-029 - Evaluation of current and future effects of land-use and climate change on hydrological services provisioning in two watersheds in central Veracruz state, Mexico | Robert Manson |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 19 | PS 19-033 - The effects of ocean acidification on the Haliotis rufescens microbiome | Azriel Montalvo |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 19 | PS 19-039 - Climate change and the accuracy of very long records of lake ice phenology | Virginia Card |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 19 | PS 19-048 - Marine-derived nitrogen deposition from salmon carcasses in coastal temperate rainforests shapes soil microbial community composition | Caroline Daws |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 20 | PS 20-062 - Quantifying the effects of atmospheric rivers on tree growth in california and the southwest | Joshua Stoddard |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 20 | PS 20-067 - Effects of flooding on tree sap flow in freshwater and coastal systems. | Roberta Peixoto |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 21 | PS 21-075 - Anthopologic Origins of Quercus hybrids in the Salt Lake Valley | Benjamin Secrest |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 22 | PS 22-081 - Restoring a Pond, Training Ecologists: Evaluating Learning Through Urban Ecosystem Management | Walker Graves |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 28 | PS 28-115 - Spatial variability of arbuscular mycorrhizal fungal propagules and root colonization across environmental gradients in an urban riparian hardwood forest | Kaan Twanabasu |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 28 | PS 28-119 - Spatial variability of arbuscular mycorrhizal fungal spore density across moisture gradients in an urban riparian hardwood forest | Kaan Finci |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 29 | PS 29-125 - Evaluating Restoration Success Through Aquatic Arthropod Emergence Phenology on the Jordan River, Utah | Jack Koloc |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 31 | PS 31-149 - Evaluation of machine learning models for simulating long-term temporal variability of methane fluxes at a peatland site | Fenghui Yuan |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 31 | PS 31-154 - Stoichiometric insights from the Aquatic Nitrogen Fixation Research Coordination Network | Amy Marcarelli |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 31 | PS 31-164 - Nutrient and water quality responses to land use/land cover patterns across a stream biome gradient | Hannah Mattes |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 31 | PS 31-166 - Stream Nutrients, Microbial Communities, and Dissolved Organic Matter Responses to Wildfires in the Western Cascades, Oregon | Humyra Bente Murshed |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 31 | PS 31-178 - Redox fluctuations and gradients in carbon and nutrient cycling in terrestrialaquatic interfaces | Fausto Machado-Silva |
-| Tue, Jul 28 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 31 | PS 31-179 - Evidence of strong-plant soil relationships associated with desert wetland ecosystems in the Mojave Desert of the southwestern United States | Chloe Sileo |
-| Wed, Jul 29 | 8:00 AM-8:15 AM | 250E | COS 092 | COS 092-01 - An initial investigation of sea slug superfamily Fionoidea for use as bioindicators for biodiversity studies | Megan Faulkner |
-| Wed, Jul 29 | 8:00 AM-8:20 AM | Grand Ballroom I | SYMP 08 | SYMP 08-01 - When Publics are in the Mix: Marine Birds, System Signals, and Nearshore Health | Julia Parrish |
-| Wed, Jul 29 | 8:15 AM-8:30 AM | 250B | COS 089 | COS 089-02 - Small size, steep gradient: body size shapes assembly rules in coral reef fishes across an environmental gradient | Lucia Pombo Ayora |
-| Wed, Jul 29 | 8:15 AM-8:30 AM | 250E | COS 092 | COS 092-02 - Effects of Anthropogenic Stressors on Nearshore Fish Nursery Habitats in Moorea | Camille Jones |
-| Wed, Jul 29 | 8:20 AM-8:40 AM | Grand Ballroom I | SYMP 08 | SYMP 08-02 - Weaving Community-Science Partnerships to Understand and Bolster Reef Health in a Changing Ocean | Adrienne Correa |
-| Wed, Jul 29 | 8:30 AM-8:45 AM | 250E | COS 092 | COS 092-03 - Bioturbation by Fighting Conch Does Not Drive Short-Term Shifts in Seagrass Sediment Microbial Composition | Vanessa Moreira C. Fernandes |
-| Wed, Jul 29 | 8:45 AM-9:00 AM | 250D | COS 085 | COS 085-04 - Wetland CH4 emissions: from in situ measurements to global budget estimate | Qing Zhu |
-| Wed, Jul 29 | 8:45 AM-9:00 AM | 250E | COS 092 | COS 092-04 - For good measure: Evaluating drones and LiDAR scanners as non-invasive methods to quantify morphometrics of large marine mammals | Kelli Ong |
-| Wed, Jul 29 | 9:00 AM-9:15 AM | 250B | COS 089 | COS 089-05 - Adaptive Trait Evolution Captures Resource Co-limitation and Explains Diversity Patterns in Marine Microorganisms | Liang Xu |
-| Wed, Jul 29 | 9:00 AM-9:15 AM | 250E | COS 092 | COS 092-05 - Ecological controls on microplastic contamination signatures in marine invertebrates from coastal Bangladesh | Swachsa Rahman |
-| Wed, Jul 29 | 9:00 AM-9:20 AM | Grand Ballroom B | SYMP 09 | SYMP 09-04 - Managing the spread of invasive carp in U.S. rivers when the odds are not in your favor | Max Post van der Burg |
-| Wed, Jul 29 | 9:15 AM-9:30 AM | 250E | COS 092 | COS 092-06 - Identifying Key Drivers of Sea Urchin Population Dynamics in the Gulf of Maine | Chandler Sendek |
-| Wed, Jul 29 | 10:00 AM-10:15 AM | 250E | COS 107 | COS 107-01 - Increasing the known range of seagrass wasting disease: Labyrinthula spp. cause lesions within Thalassia hemprichii in the Republic of Palau | Joy Kumagai |
-| Wed, Jul 29 | 10:00 AM-10:15 AM | 251C | COS 105 | COS 105-01 - First Fires: Socioecological restoration of Indigenous cultural burning in tule wetlands | Nicolas Cruz |
-| Wed, Jul 29 | 10:00 AM-11:30 AM | Grand Ballroom H | INS 07 | INS 07-04 - Confronting uncertainty in the rehabilitation of co-managed inland lakes across the Ceded Territories of the Upper Midwest | Aaron Shultz |
-| Wed, Jul 29 | 10:15 AM-10:30 AM | 250A | COS 100 | COS 100-02 - Shifts in breeding phenology of freshwater amphibian species and their intra-specific responses to climate change | Yingying Xie |
-| Wed, Jul 29 | 10:15 AM-10:30 AM | 250D | COS 099 | COS 099-02 - CANCELLED: Investigating the relative energetic importance of different regions of the U.S. east coast for the migratory sand tiger shark using an integrative stable isotope mixing model | Benjamin Marsaly |
-| Wed, Jul 29 | 10:15 AM-10:30 AM | 250E | COS 107 | COS 107-02 - Long-term eDNA time-series reveal causal effects of temperature on the stability of aquatic microbial communities in a coastal ecosystem | Sangwook LEE |
-| Wed, Jul 29 | 10:15 AM-10:30 AM | 251A | COS 110 | COS 110-02 - CANCELLED: Restoration of rocky coastline with translocated endangered black abalone (Haliotis cracherodii): successes and challenges | Wendy Bragg |
-| Wed, Jul 29 | 10:30 AM-10:45 AM | 250D | COS 099 | COS 099-03 - Accelerometry and animal-borne video reveals the importance of aerial capture of flying fish and predator facilitation interactions to red-footed boobies. | Abigail Schiffmiller |
-| Wed, Jul 29 | 10:30 AM-10:45 AM | 250E | COS 107 | COS 107-03 - Occurrence of Microplastics in Rocky Shore Chitons from Contrasting Anthropogenic Zones in Puerto Rico | Josue Rosario Santiago |
-| Wed, Jul 29 | 10:30 AM-10:45 AM | 251E | COS 101 | COS 101-03 - Habitat mosaics in a large-river floodplain ecosystem: Uncovering disproportional effects of habitat homogenization across multiple taxa | Julia Hampton |
-| Wed, Jul 29 | 10:45 AM-11:00 AM | 250E | COS 107 | COS 107-04 - Snap, crackle, pop: Uncovering acoustic indicators of oyster reef condition and functioning | Philip Souza |
-| Wed, Jul 29 | 11:00 AM-11:15 AM | 250E | COS 107 | COS 107-05 - Rapid in-situ range testing for acoustic telemetry in Leizhou Bay, South China Sea | Lifei Wang |
-| Wed, Jul 29 | 11:15 AM-11:30 AM | 250E | COS 107 | COS 107-06 - Unexpected convergence of two California coastal microeukaryote communities revealed by ecological trajectory analysis and machine learning approaches | Isidora Echenique |
-| Wed, Jul 29 | 11:15 AM-11:30 AM | 251E | COS 101 | COS 101-06 - Positive biotic interactions homogenize riverine metacommunities | Akira Terui |
-| Wed, Jul 29 | 1:30 PM-1:45 PM | 250F | COS 119 | COS 119-01 - Gut check: A statistical power analysis of diet metrics | Nate Nadal |
-| Wed, Jul 29 | 1:30 PM-1:45 PM | 251A | COS 124 | COS 124-01 - Restoring Cyanobacterial Mats on Coastal Salt Flats: What environmental factors affect their growth? | Courtney Bartlett |
-| Wed, Jul 29 | 1:45 PM-2:00 PM | 250F | COS 119 | COS 119-02 - Patterns in freshwater fish species biomass and reservoir characteristics in the USA | Christine Parisek |
-| Wed, Jul 29 | 2:00 PM-2:15 PM | 250A | COS 115 | COS 115-03 - Carbon flux dynamics in co-located terrestrial ecosystems: A floodplain, a grassland, and a pastureland using the eddy covariance in Duke Farms, New Jersey | Suman Dhakal |
-| Wed, Jul 29 | 2:00 PM-2:15 PM | 250F | COS 119 | COS 119-03 - Improving Pacific salmon abundance forecasts with empirical dynamic modeling | Anna Poulton |
-| Wed, Jul 29 | 2:00 PM-2:15 PM | 251C | COS 123 | COS 123-03 - Scale dependent habitat use of juvenile sharks in a dynamic multi-species nursery across a gradient of predation risk | Sara Casareto |
-| Wed, Jul 29 | 2:15 PM-2:30 PM | 250C | COS 116 | COS 116-04 - Host diversity and community composition alter host microbiome evenness and beta-diversity in aquatic ecosystems | Joshua Dominguez |
-| Wed, Jul 29 | 2:15 PM-2:30 PM | 250F | COS 119 | COS 119-04 - Source characterisation, ecological and health risk assessment of heavy metals in Blackchin Tilapia {Sarotherodon melanotheron (Rüppell 1852)} from Lagos and Ologe Lagoons, Lagos State, Nigeria. | Prince Ndimele |
-| Wed, Jul 29 | 2:15 PM-2:30 PM | 251A | COS 124 | COS 124-04 - Balancing Flood Risk and Endangered Species in Americas Second Largest City: The Los Angeles River Ecosystem Restoration and Recreation Reach 8A Project | Christopher Adkison |
-| Wed, Jul 29 | 2:15 PM-2:30 PM | 251C | COS 123 | COS 123-04 - Using edible goby gummies to understand how coloration and nutrition shape predation on coral reefs | Christopher Hemingson |
-| Wed, Jul 29 | 2:30 PM-2:45 PM | 250F | COS 119 | COS 119-05 - Testing for Positive Density-Dependent Oyster Recruitment at Multiple Scales in Cedar Key, Florida | Chad Palmer |
-| Wed, Jul 29 | 2:30 PM-2:45 PM | 251A | COS 124 | COS 124-05 - Mapping Restoration Opportunity Hotspots in Semi-Arid Riparian Ecosystems Using Aerial lidar | T. Caughlin |
-| Wed, Jul 29 | 2:30 PM-2:45 PM | Grand Ballroom I | OOS 24 | OOS 24-05 - Weaving Water and Fire: TEK-informed wetland restoration and its implications for mosquito ecology | Geoffrey Attardo |
-| Wed, Jul 29 | 2:45 PM-3:00 PM | 251C | COS 123 | COS 123-06 - Impacts of fireworm (Hermodice carunculata) population dynamics on a restored coral reef with variable topographic complexity: Implications for upscaling coral restoration | Arelys Lopez |
-| Wed, Jul 29 | 3:30 PM-3:45 PM | 250E | COS 134 | COS 134-01 - Temporal cross-scale interactions and the production of Cyprinodontid fishes in the Florida Everglades. | William Annis |
-| Wed, Jul 29 | 3:30 PM-3:45 PM | 255A | COS 136 | COS 136-01 - Feeding performance of Louisiana poeciliid fishes exposed to residential wastewater effluent | Jonathan Chapman |
-| Wed, Jul 29 | 3:30 PM-5:00 PM | Grand Ballroom H | INS 09 | INS 09-03 - Centering connection and co-production in restoring the Tijuana Estuary | Kristen Goodrich |
-| Wed, Jul 29 | 3:30 PM-5:00 PM | Grand Ballroom H | INS 09 | INS 09-05 - Resilience Is Relational: Co-producing Watershed-Scale Science Through a Place-Based Conservation Organization | Molly McDevitt |
-| Wed, Jul 29 | 3:30 PM-3:45 PM | Grand Ballroom J | OOS 26 | OOS 26-01 - Microbial responses to global change and local management in wetland soils: from strain physiology to community metabolism. | Willm Martens-Habbena |
-| Wed, Jul 29 | 3:45 PM-4:00 PM | Grand Ballroom I | OOS 27 | OOS 27-02 - How plasticity, adaptation and shifts in microbial partners contribute to the response of seagrasses to environmental change | John Stachowicz |
-| Wed, Jul 29 | 3:45 PM-4:00 PM | Grand Ballroom J | OOS 26 | OOS 26-02 - In Stressed Baldcypress Swamps, Do Host Trees Shape Their Own Microbiome? | Elizabeth MacDougal |
-| Wed, Jul 29 | 4:00 PM-4:15 PM | 251E | COS 138 | COS 138-03 - Metapopulation Structure and Connectivity Among Lake Superior Burbot (Lota lota) | Grant Dlesk |
-| Wed, Jul 29 | 4:00 PM-4:15 PM | 255B | COS 141 | COS 141-03 - Development of a rocky coast urbanization index | Bailey Marlow |
-| Wed, Jul 29 | 4:00 PM-4:15 PM | Grand Ballroom J | OOS 26 | OOS 26-03 - Exploring belowground microbial interactions and plant-microbe linkages in saltmarshes and coastal prairie dunes. | Candice Lumibao |
-| Wed, Jul 29 | 4:15 PM-4:30 PM | 251C | COS 139 | COS 139-04 - Diel and lunar cycles shape food web structures in a temperate stream | Hinako Asakura |
-| Wed, Jul 29 | 4:15 PM-4:30 PM | 255A | COS 136 | COS 136-04 - Are Populus hybrids the solution for successful riparian restoration in a warming and drying world? | Kelly Kerr |
-| Wed, Jul 29 | 4:15 PM-4:30 PM | Grand Ballroom J | OOS 26 | OOS 26-04 - Hydrologic controls on saltmarsh microbiomes: what can the contrast between creek edge and marsh interior tell us about marsh response to global change? | Jennifer Bowen |
-| Wed, Jul 29 | 4:30 PM-4:45 PM | 251E | COS 138 | COS 138-05 - CANCELLED: Coral metapopulation stability is modulated by spatial asynchrony and dispersal across spatial and temporal scales | Griffin Srednick |
-| Wed, Jul 29 | 4:30 PM-4:45 PM | 251F | COS 137 | COS 137-05 - Native bees forage extensively on nonnative plants in fragmented wetlands | Jen Schlauch Saiyawong |
-| Wed, Jul 29 | 4:30 PM-4:45 PM | 255A | COS 136 | COS 136-05 - CANCELLED: Assessing the role of plasticity in determining thermal risk across the life cycle of an intertidal gastropod | Jack Litle |
-| Wed, Jul 29 | 4:30 PM-4:45 PM | Grand Ballroom B | OOS 28 | OOS 28-05 - Ecological Responses to Marine Heatwaves Along an Estuarine Spatial Gradient | Rae Fadlovich |
-| Wed, Jul 29 | 4:30 PM-4:45 PM | Grand Ballroom J | OOS 26 | OOS 26-05 - Considering the fungal microbiome of glass sand for coastal restoration. | Sunshine Van Bael |
-| Wed, Jul 29 | 4:45 PM-5:00 PM | 255A | COS 136 | COS 136-06 - Experimental drought induces leaf loss in riparian saplings despite effective stomatal regulation of leaf water potential | Jared Williams |
-| Wed, Jul 29 | 4:45 PM-5:00 PM | Grand Ballroom J | OOS 26 | OOS 26-06 - Integrating native soil fungi into coastal dune and marsh restoration to improve plant survival and coastal resiliency. | Jeremiah Henning |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 32 | PS 32-009 - Effects of aquatic animals on soil organic carbon dynamics in the rice-fish coculture ecosystems | Xin Chen |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 33 | PS 33-019 - CANCELLED: Museum records clarify the historical distribution and morphology of Eupera Portoricensis, an endangered freshwater bivalve in Puerto Rico | Diego Sotomayor |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 33 | PS 33-024 - Molecular Monitoring of Magallana gigas Larval Dynamics and Phytoplankton eDNA: Ecological Indicators for Proactive Spatfall Forecasting | Hyun-Woo Kim |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 33 | PS 33-025 - Is there size assortative mating in wild Costa Rican cichlid fishes? | Desiree Thomas |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 33 | PS 33-032 - Soil and gorundwater ionic composition variability in environmental samples in an estuarine wetland in Puerto Rico: Implications for rehabilitation and management. | Yahir Oquendo Ramos |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 33 | PS 33-033 - https://agmsu-my.sharepoint.com/:b:/g/personal/riveraw6_uagm_edu/IQCZu2f8Mm1KR5BntI5mmoFGAYSE9f0X0cIGJeQJgYWSLpU?e=VJctom | Yahir Oquendo Ramos |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 34 | PS 34-036 - Impact of disturbance and nutrient enrichment on salt marsh ecosystems | Kalpana Patabendige |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 35 | PS 35-045 - Early Detection and Freeze-Induced Dieback of Mangrove Encroachment in Salt Marsh Ecosystems Using High-Resolution Drone-Based Multispectral Imaging | Madeleine Dietrich |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 35 | PS 35-054 - CANCELLED: Population patterns of the intertidal chiton Acanthopleura granulata under anthropogenic disturbance | Yulia Santos-López |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 36 | PS 36-062 - Patterns of functional diversity across spatiotemporal gradients in the rocky intertidal | Madeleine Tanda |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 37 | PS 37-080 - CANCELLED: Environmental Neurobiology of Emerging Contaminants: Neural Oxidative Stress and Behavioral Disruption in a Tropical Freshwater Shrimp | Stefani Cruz Rosa |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 40 | PS 40-111 - Evaluation of habitat suitability and assessment of invasion risk of Water Hyacinth (Eichhornia crassipes) in Global Freshwater Ecosystems | Prabhat Adhikari |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 40 | PS 40-114 - The implications of invertebrate herbivory on non-native aquatic plants | Barbara Suassuna Schincariol |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 40 | PS 40-117 - Short-term direct and indirect outcomes in a population of declining native fish driven by a sympatric global invasive crayfish | Nathanael Dardano |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 40 | PS 40-127 - Biogeochemical and Microbial Consequences of Glyphosate-Based Phragmites Management in Great Salt Lake Wetlands | Tanner Thompson |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 40 | PS 40-130 - Field evidence of altered riparian soil nitrogen cycling by non-native knotweed (Reynoutria × bohemica) in Western Pennsylvania (USA) | Abby Yancy |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 41 | PS 41-145 - Contrasting hydraulic responses to vapor pressure deficit of native vs. invasive trees in arid riparian zones | Brandt Winn |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 42 | PS 42-149 - CANCELLED: Assessing harvesting intensity and sustainability in coastal crab fisheries: A socio-ecological perspective | Md Faridul Islam |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 42 | PS 42-155 - CANCELLED: Integrating Hydrology and Human Water Footprints: A Case Study of the Great Salt Lake Watershed | Rocky Seeley |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 42 | PS 42-158 - Toward Socially and Ecologically Grounded River Governance: Eco-Jurisprudence Networks in the Colorado River Basin | Savannah Lehnert |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 44 | PS 44-171 - Broad-scale patterns and hydrologic controls of plant mycorrhizal types across U.S. wetlands | Danielle Sublett |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 44 | PS 44-172 - Evaluation of carbon storage and carbon sequestration rates by dominant plant communities in riverine wetlands | Miri Hwang |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 44 | PS 44-173 - Reconstructing disturbance history and seed-bank potential to guide wetland restoration at Sam Hole Bay | Adamina Bilbrey |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 44 | PS 44-174 - Aboveground and belowground carbon stocks in a high elevation meadow ecosystem | Benjamin Sullivan |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 44 | PS 44-175 - Teal Carbon Wetlands: The Largest Yet Most Overlooked Natural Climate Solution in the Global Carbon Budget | Shubham Kumar |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 44 | PS 44-176 - Habitat use by waterbirds along an urbanization gradient in a landscape of the tropical Andes | Marlyn Zuluaga-Egas |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 44 | PS 44-177 - Clear sounds through the marsh haze: Improving detection of secretive marsh birds with acoustic monitoring | Rachel Mansfield |
-| Wed, Jul 29 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PS 44 | PS 44-178 - Greener Grass or Greener Water: Investigating Fertilizer Runoff and Eutrophic Effects in Urban Ponds | Rylee Keiffer |
-| Thu, Jul 30 | 8:00 AM-8:15 AM | 251E | COS 153 | COS 153-01 - Spatial heterogeneity in riverine systems buffers salmonid life history shifts and stabilize population dynamics under global warming | Sho Fujita |
-| Thu, Jul 30 | 8:15 AM-8:30 AM | Grand Ballroom J | OOS 30 | OOS 30-02 - Revisiting the fisheries data that inspired Volterra | Rafael D'Andrea |
-| Thu, Jul 30 | 8:30 AM-8:45 AM | 250B | COS 148 | COS 148-03 - Climate-ready interventions for kelp ecosystems | Marissa Baskett |
-| Thu, Jul 30 | 8:30 AM-8:45 AM | 251D | COS 154 | COS 154-03 - Quantifying recreational fishery resilience to climate change | Matthew Maldonado |
-| Thu, Jul 30 | 8:45 AM-9:00 AM | 250D | COS 145 | COS 145-04 - Long-term impact of wildfire on in-stream phosphorus | Abigail Toretsky |
-| Thu, Jul 30 | 9:00 AM-9:15 AM | 250D | COS 145 | COS 145-05 - Geomorphic Structure and Synoptic Nutrient Variability Across Urban Watersheds | Brittany Washington |
-| Thu, Jul 30 | 9:15 AM-9:30 AM | 251F | COS 147 | COS 147-06 - Deterministic patterns regulate paleo-diatom assemblages in ancient, tropical Lake Towuti | Mariam Ageli |
-| Thu, Jul 30 | 10:30 AM-10:45 AM | 250B | COS 163 | COS 163-03 - Simulating oak wilt disease spread across the Apostle Islands National Lakeshore | Ryan Pienaar |
-| Thu, Jul 30 | 10:45 AM-11:00 AM | 250F | COS 158 | COS 158-04 - Common loons breed on lakes with shoreline development similar to where they were born | Emily Renkey |
-| Thu, Jul 30 | 10:45 AM-11:00 AM | 251B | COS 166 | COS 166-04 - Divergent environmental gradients generate contrasting fungal diversity patterns in a central New York peatland complex. | Miranda Murray |
-| Thu, Jul 30 | 11:15 AM-11:30 AM | 250D | COS 160 | COS 160-06 - Divergent predictions of northern peatland responses to climate warming and elevated CO2: Multi-model intercomparison at the SPRUCE experiment | Xiaoying Shi |
-| Thu, Jul 30 | 11:15 AM-11:30 AM | 251E | COS 168 | COS 168-06 - Seasonal control and density-dependence in population dynamics of fishes in a pulsed floodplain ecosystem | Joel Trexler |
-| Thu, Jul 30 | 11:15 AM-11:30 AM | Grand Ballroom I | OOS 34 | OOS 34-06 - Challenges for upscaling peatland observations across the broader and complex boreal landscape | Daniel Ricciuto |
-| Thu, Jul 30 | 1:30 PM-1:45 PM | 251E | COS 175 | COS 175-01 - Species niche, rather than morphological traits, influence interspecific dynamics of kelp forest macroalgae | Ethan Kadiyala |
-| Thu, Jul 30 | 1:30 PM-3:00 PM | Grand Ballroom H | INS 12 | INS 12-06 - Integrating multiple large-scale open databases to better understand continental to catchment scale changes to aquatic ecosystems | Trisha Spanbauer |
-| Thu, Jul 30 | 1:30 PM-3:00 PM | Grand Ballroom H | INS 12 | INS 12-07 - Leveraging NEON and Phenocam datasets to investigate aquatic-terrestrial linkages in macrosystem scales | Gustavo Coelho |
-| Thu, Jul 30 | 1:45 PM-2:00 PM | 250D | COS 173 | COS 173-02 - Structure without signal: challenges in inferring algal organization from river metabolism | Alice Carter |
-| Thu, Jul 30 | 2:00 PM-2:15 PM | 250B | COS 177 | COS 177-03 - Sifting through the mudflat: Linking climatic niches to demographic performance in a liminal estuarine system | Kyler Brumfield |
-| Thu, Jul 30 | 2:00 PM-2:15 PM | 251F | COS 183 | COS 183-03 - Boom and decline of an invader dominating the worlds largest freshwater system | Vadim Karatayev |
-| Thu, Jul 30 | 2:15 PM-2:30 PM | 251E | COS 175 | COS 175-04 - The role of morphological traits in habitat selection and community assembly of aquatic insects | Julia Renfrow |
-| Thu, Jul 30 | 2:15 PM-2:30 PM | Grand Ballroom I | OOS 37 | OOS 37-04 - Belowground competition shapes the response of peatland biogeochemistry to warming and elevated CO2 | Verity Salmon |
-| Thu, Jul 30 | 2:45 PM-3:00 PM | 251A | COS 180 | COS 180-06 - Leveraging herbaria to investigate climate change impacts on seagrass-microbe interactions | Jacqueline Pena |
-| Thu, Jul 30 | 3:30 PM-3:45 PM | 251B | COS 194 | COS 194-01 - Coming of age: Extreme constraints in the recruitment age of a marine predator in a variable environment | Madeline Cheu |
-| Thu, Jul 30 | 4:15 PM-4:30 PM | 250E | COS 192 | COS 192-04 - Policy Options for a Governing a Federal Restoration Initiative for the Great Salt Lake | Pervaze Sheikh |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 01 | LB 01-009 - Effect of Adjacent Riparian Habitat Quality on Bird-Related Food Safety Risks in the Salinas Valley | Chinatsu Garey |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 02 | LB 02-010 - Long?term seasonal stratification, dissolved oxygen thresholds, and epilimnetic water chemistry in Smith Mountain Lake, Virginia (20052025) | Dana Ghioca-Robrecht |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 02 | LB 02-011 - Spatiotemporal Variations in Pollution Sources in a Headwater Watershed: Effects of Landscape Characteristics and Hydrological Connectivity | Jianhong Wu |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 02 | LB 02-013 - Basin-dependent effects of connectivity on stream molecular richness revealed by environmental DNA | Alexandre Peressin |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 02 | LB 02-014 - Examining the role of micronutrients in driving herbivore feeding behavior on coral reefs | Megan Do |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 02 | LB 02-015 - CANCELLED: Modeling Freshwater Inflow Variability in St. Marks River - Apalachee Bay Watershed | Christianah Adegboyega |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 02 | LB 02-016 - Listening to Lakes: Revealing freshwater soundscapes is a work in progress | Noah D'Souza |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 02 | LB 02-017 - Stepping-Stone Wetlands and Metapopulation Stability: An Agent-Based Simulation of Amphipod Persistence Under Climate Change in the Prairie Pothole Region | Sharon Kahara |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 03 | LB 03-018 - Land-Ocean Connectivity: Terrestrial mammal use of sandy beaches | Rosie Manner |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 03 | LB 03-026 - CANCELLED: Foraging Behavior of Herbivorous Fishes: Effects of Rugosity and Sociality | Liam Gutierrez |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 04 | LB 04-038 - A Multi-Method Evaluation of eDNA Metabarcoding Accuracy and Limitations in Urban Phytoplankton Monitoring | Nengwen Xiao |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 04 | LB 04-045 - Impact of beaver dam flooding on vegetative species composition in central piedmont floodplain forests | Aidan Power |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 05 | LB 05-049 - Atmospheric and spatial drivers of egg abundance in beach nesting shorebirds across an urban-coastal gradient of the Rockaway Peninsula, New York | Rolando Gutierrez |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 06 | LB 06-059 - A Tale of Two Blooms: Exploring Nutrient Dynamics of a Culturally Significant Reservoir Using Nitrate Stable Isotopes | Elijah Hall |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 06 | LB 06-060 - Impacts of freshwater salinization on carbon processing in streams | Allyson Marrs |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 06 | LB 06-066 - Scaling biological nitrogen fixation across aquatic ecosystems: a Bayesian multilevel synthesis | Christa Torrens |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 07 | LB 07-070 - Geomorphic role of large wood in savanna floodplain rivers during extreme flood events | Megan Donaldson |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 07 | LB 07-071 - DECOUPLING BETWEEN CLIMATE CHANGE AND BIOLOGICAL INVASION RESHAPES ALLOMETRY ACROSS AQUATIC INSECT ONTOGENY | Tauany Rodrigues |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 07 | LB 07-075 - Managed recharge delivers measurable ecological benefits: Isotope evidence from California riparian trees | Jory Lerback |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 07 | LB 07-083 - Climate change restructures abovebelowground trait coordination in a high-latitude coastal wetland | Emily Santos |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 08 | LB 08-093 - Endophyte Diversity in Modern and Ancestral Seeds of the Coastal Marsh Plant, Schoenoplectus americanus | Trinity Storr |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 08 | LB 08-100 - Determining drought sensitivities of major plant species within the Lake Tahoe region for targeted monitoring of fuel moisture content | Andrés Andrade |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 08 | LB 08-107 - Can Riparian Ecosystems Keep Up? Multi-Year Recovery Dynamics of the Nakdong River Under Intensifying Monsoon Frequency | MiYeon An |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 09 | LB 09-116 - Predation and turbidity structure experimental zooplankton communities with implications for Guinea worm transmission | Logan Story |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 10 | LB 10-120 - Using habitat-modeling methods to characterize the spatial distribution of fishing effort: Modeling the American lobster fishery using high-resolution vessel tracking data. | Luis Ramirez Cruz |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 11 | LB 11-134 - Fog on the California coast: A source of marine mercury to redwood forests? | Julia Burnside |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 15 | LB 15-163 - Rock, Mud, and Marsh: How Shoreline Armoring Influences Invasive and Native Crab Occupancy | Sharon Kahara |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 15 | LB 15-164 - Long-term dynamics of non-native plant richness and their consequences for native community stability in Louisiana coastal wetlands | Yaolin Guo |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 16 | LB 16-169 - Phytoplankton community composition across marine habitat islands: A meta-analysis | Katie Pelon (Shore) |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 16 | LB 16-170 - Shellfish Superpowers: Effects of Trigonelline on Mud Crab and Oyster Larvae Behavior | Mariano Edralin |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 16 | LB 16-173 - Advancing coastal water temperature monitoring with fine resolution ECOSTRESS thermal satellite data | Quin Meiseles |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 16 | LB 16-174 - Places to Sea: An investigation of coastal access and community resilience | Alyssa Pfitzer Price |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 17 | LB 17-176 - Vessel presence and traffic: Modeling potential effects on North Atlantic Right Whale habitat suitability in the northeastern U.S. Atlantic Ocean | Jaime Deville |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 17 | LB 17-177 - Evolution of active switching: Adaptive dynamics of zooplankton grazing in a two-prey one-predator model | Junkun Ren |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 17 | LB 17-182 - Integrating Species Distribution Models with Network-Based Community Detection to Predict Freshwater Fish Communities | Dae-Seong Lee |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 18 | LB 18-187 - Global change alters shrub biogeochemical mechanisms in a boreal peatland | Isabella Pellicano |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 23 | LB 23-244 - Four Decades of Urbanization and its Impact on Wintering Raptors around Utah Lake, USA | Peter Doust |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 24 | LB 24-247 - Reopening a cold case: the effect of chaff on rare vernal pool grass germination | B'Elanna Pho-Marrujo |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 24 | LB 24-248 - Dynamics of a nitrogen-fixing aquatic fern in a wetland constructed for metal retention | Jack Swanner |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 24 | LB 24-249 - Riparian tree recruitment facilitated by but not dependent on high flows along a managed river in the arid Great Basin | Meredith Jabis |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 24 | LB 24-250 - Hydroclimatic variation in methane-cycling microbiomes in South Texas freshwater wetlands | Myung Hwangbo |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 24 | LB 24-251 - Vegetation zones and methane-related variation across coastal wetlands | Jongsun Kim |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | LB 24 | LB 24-252 - Comparative Analysis of Above-Ground Biomass Estimation in Branford Salt Marshes: Evaluating Traditional Field Methods and UAS for Precision Assessment. | Sonam Sah |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 01 | PP 01-260 - The Roles of Cyanobacteria and Eukaryotic Algae Within Utah Lakes Regime Shift | Christian Demarco |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 01 | PP 01-261 - Effects of microplastics on microbial abundances and redox conditions in streambed sediments | Annika Quick |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 01 | PP 01-262 - Restoring watershed function and aquatic biodiversity in wildfire-impacted headwater systems using low-tech process-based restoration | Catherine McClure |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 01 | PP 01-263 - Made Pollutants: Road Salts and Innovative Approach to Promote Sustainable Water Quality and Environmental Decisions in the Chesapeake Bay Watershed | Veronica Tangiri |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 01 | PP 01-264 - The role of mutualistic fungal endophytes under high salinity stress along Texas coastlines | Camille Thompson |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 01 | PP 01-265 - CANCELLED: Evaluating the Ecology of Dinoflagellate Blooms in a Changing Estuary, the Indian River Lagoon | Paige Aldred |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 01 | PP 01-266 - Remote Sensing Reveals Seasonal Riparian Dynamics as Drivers of Macroinvertebrate Communities | Colin Martin |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 02 | PP 02-270 - Winter bat activity at River Ridge Ranch: Temperature effects under stable precipitation using passive acoustic monitoring | Mariah Sainz |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 03 | PP 03-277 - Taking stock of blue carbon in black mangroves (Avicennia germinans) | Lucas Pender |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 05 | PP 05-287 - Archeology, eDNA, and standard fisheries methods: An interdisciplinary approach to studying the fisheries of the Lake Fausse Pointe, Lake Dauterive and Grande Avoille Cove lake complex across centuries | Travis Haas |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 05 | PP 05-289 - CANCELLED: Measuring the predictability of human activity at sea across spatial and temporal scales | Alicia Caughman |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 05 | PP 05-291 - Wetland succession following dam removal | Andrew Savage |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 08 | PP 08-304 - Pathways to the Delta: Investigating Undergraduate Participation in Coastal and Riverine Sciences within the Mississippi River Delta Transition Initiative | Monica Burr |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 09 | PP 09-307 - Dynamics of tree growth and reproductive phenology in Bornean peatlands | William Aguado |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 14 | PP 14-334 - Exploring How Southwest Riparian Ecosystems Respond to Drought: An Analysis of Two Keystone Riparian Species. | Ari DellaSala |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 15 | PP 15-339 - CANCELLED: From reservoirs to rivers: Documenting ecosystem recovery and project success after two years of the Klamath River Renewal Project restoration journey. | Caitlin Boise |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 18 | PP 18-350 - Assessing effects of wild pig (Sus scrofa) disturbance on wetland vegetation in South Texas | Brenna Edwards |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 18 | PP 18-351 - CANCELLED: Ecosystem recovery in natural springs following springbox removal in the sagebrush-steppe | Russell Torgersen |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 18 | PP 18-352 - The ribbiting diversity of vernal pools: Observing the changing biodiversity of man-made wetlands in a potentially threatened habitat | Jennifer Beaver |
-| Thu, Jul 30 | 5:00 PM-6:30 PM | ESA Exhibit Hall | PP 18 | PP 18-353 - Assessing carbon sequestration in beaver-influenced and beaver-dam-analogue riparian ecosystems | Kelsey Dicianna |
+df <- read_csv("data/detailed.csv", show_col_types = FALSE)
+
+fmt <- if (knitr::is_latex_output()) "latex" else "html"
+
+k <- kbl(df, format = fmt, booktabs = TRUE,
+         longtable = (fmt == "latex"), align = "l",
+         caption = paste0("Total talks/posters found: ", nrow(df)))
+
+if (fmt == "latex") {
+  k <- k |>
+    kable_styling(
+      latex_options = c("striped", "repeat_header", "hold_position"),
+      stripe_color = "gray!10",
+      font_size = 8
+    ) |>
+    column_spec(1, width = "0.7in") |>
+    column_spec(2, width = "1.0in") |>
+    column_spec(3, width = "0.7in") |>
+    column_spec(4, width = "0.7in") |>
+    column_spec(5, width = "4.3in") |>
+    column_spec(6, width = "1.3in")
+} else {
+  k <- k |>
+    kable_styling(
+      bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+      full_width = TRUE
+    )
+}
+
+k
+```

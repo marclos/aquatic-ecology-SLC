@@ -45,8 +45,8 @@ jobs:
 
       - name: Render PDFs
         run: |
-          quarto render detailed.qmd --to pdf
-          quarto render highlevel.qmd --to pdf
+          quarto render detailed.qmd --to pdf --pdf-engine=pdflatex
+          quarto render highlevel.qmd --to pdf --pdf-engine=pdflatex
           cp detailed.pdf docs/detailed.pdf
           cp highlevel.pdf docs/highlevel.pdf
 
