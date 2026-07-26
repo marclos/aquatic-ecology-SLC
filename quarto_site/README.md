@@ -87,16 +87,15 @@ tables). A couple of things to know:
   ```r
   tinytex::install_tinytex()
   ```
-- **PDF output does NOT go into `docs/` automatically.** Only the site's
-  primary format (HTML) is routed there by "Render Website" / plain
-  `quarto render`. Rendering a page to PDF — whether via the dropdown next to
-  RStudio's **Render** button, or `quarto render detailed.qmd --to pdf` from a
-  terminal — drops `detailed.pdf` next to the `.qmd` file in the project root,
-  **not** in `docs/`. If you (or GitHub Pages) then look for `docs/detailed.pdf`
-  and it's not there, this is why.
+- **PDF output location can vary.** Sometimes Quarto drops `detailed.pdf` next
+  to the `.qmd` source in the project root; sometimes (e.g. after a full
+  `quarto render` has already run) it goes straight into `docs/`. Both have
+  been observed. `render_all.sh` (and the GitHub Actions workflow) handle
+  either case automatically — they check `docs/` first, and only copy from
+  the project root if the PDF isn't already there.
 - **Easiest fix: use `render_all.sh`.** This repo includes a script that
-  renders the website, renders both PDFs, and copies them into `docs/` in one
-  go:
+  renders the website, renders both PDFs, and makes sure both end up in
+  `docs/` in one go.
   ```
   ./render_all.sh
   ```

@@ -1,0 +1,63 @@
+---
+title: "Detailed Schedule"
+subtitle: "Every aquatic-ecology talk and poster, sorted by date/time/room"
+format:
+  html:
+    df-print: paged
+  pdf:
+    pdf-engine: pdflatex
+    geometry:
+      - landscape
+      - margin=0.4in
+    fontsize: 8pt
+    toc: false
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+Salt Lake City, UT | July 26–30, 2026 | All times MDT
+
+::: {.content-visible when-format="html"}
+[Download a printable PDF version](detailed.pdf)
+:::
+
+Every individual talk/poster from the ESA 2026 program matching aquatic ecology (marine, coastal, wetlands, lakes, rivers/streams, estuaries, freshwater, and related topics). Sorted by date, time, room, and title. Entries still marked "CANCELLED" in the original program are left as-is.
+
+```{r}
+library(readr)
+library(knitr)
+library(kableExtra)
+
+df <- read_csv("data/detailed.csv", show_col_types = FALSE)
+
+fmt <- if (knitr::is_latex_output()) "latex" else "html"
+
+k <- kbl(df, format = fmt, booktabs = TRUE,
+         longtable = (fmt == "latex"), align = "l",
+         caption = paste0("Total talks/posters found: ", nrow(df)))
+
+if (fmt == "latex") {
+  k <- k |>
+    kable_styling(
+      latex_options = c("striped", "repeat_header", "hold_position"),
+      stripe_color = "gray!10",
+      font_size = 8
+    ) |>
+    column_spec(1, width = "0.7in") |>
+    column_spec(2, width = "1.0in") |>
+    column_spec(3, width = "0.7in") |>
+    column_spec(4, width = "0.7in") |>
+    column_spec(5, width = "4.3in") |>
+    column_spec(6, width = "1.3in")
+} else {
+  k <- k |>
+    kable_styling(
+      bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+      full_width = TRUE
+    )
+}
+
+k
+```

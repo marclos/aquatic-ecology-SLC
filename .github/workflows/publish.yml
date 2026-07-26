@@ -45,10 +45,19 @@ jobs:
 
       - name: Render PDFs
         run: |
-          quarto render detailed.qmd --to pdf
-          quarto render highlevel.qmd --to pdf
-          cp detailed.pdf docs/detailed.pdf
-          cp highlevel.pdf docs/highlevel.pdf
+          quarto render detailed.qmd --to pdf --pdf-engine=pdflatex
+          quarto render highlevel.qmd --to pdf --pdf-engine=pdflatex
+          for f in detailed.pdf highlevel.pdf; do
+            if [ -f "docs/$f" ]; then
+              echo "$f already in docs/"
+            elif [ -f "$f" ]; then
+              cp "$f" "docs/$f"
+              echo "copied $f into docs/"
+            else
+              echo "WARNING: $f not found in project root or docs/"
+              exit 1
+            fi
+          done
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
