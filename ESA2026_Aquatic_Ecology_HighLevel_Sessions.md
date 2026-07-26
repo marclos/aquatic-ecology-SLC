@@ -1,11 +1,4 @@
----
-title: "High-Level Sessions"
-subtitle: "Session blocks (Symposia, Special Sessions, Organized Oral Sessions, Workshops, Inspire Sessions, and aquatic-titled Contributed Oral/Poster blocks) focused on aquatic ecology"
-format:
-  html:
-    df-print: paged
----
-
+# ESA 2026 Annual Meeting: Aquatic Ecology - Symposia, Special Sessions & Organized Sessions
 
 Salt Lake City, UT | July 26-30, 2026 | All times MDT
 
