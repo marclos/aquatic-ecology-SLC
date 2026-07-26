@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "ESA 2026 — Aquatic Ecology Guide"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: detailed.qmd
+        text: Detailed Schedule
+      - href: highlevel.qmd
+        text: High-Level Sessions
+  page-footer:
+    center: "ESA 2026 Annual Meeting | Salt Lake City, UT | July 26–30, 2026"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: right
+    df-print: paged
+    code-fold: true
+    embed-resources: true

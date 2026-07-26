@@ -1,0 +1,26 @@
+---
+title: "High-Level Sessions"
+subtitle: "Symposia, Special Sessions, Organized Oral Sessions & Workshops focused on aquatic ecology"
+format:
+  html:
+    df-print: paged
+---
+
+
+Salt Lake City, UT | July 26-30, 2026 | All times MDT
+
+This is a curated, high-level view of the ESA 2026 program: Symposia, Special Sessions, Organized Oral Sessions, Workshops, Inspire Sessions, and Plenaries whose overall session title is centered on aquatic ecology (marine, coastal, wetlands, lakes, rivers, and related themes). Unlike the detailed talk-by-talk document, this list is meant to highlight full sessions worth planning your day around. Sorted by date, time, and location.
+
+**Total sessions found: 9**
+
+| Date | Time | Location | Session Type | Session Title | Why Flagged |
+|---|---|---|---|---|---|
+| Mon, Jul 27 | 11:45 AM-1:15 PM | 355E | Special Session | SS 12 - Longterm Studies Section- Special Session: The Ecology and Natural History of the Region around Salt Lake City, Utah | title match |
+| Tue, Jul 28 | 8:00 AM-9:30 AM | Grand Ballroom J | Organized Oral Session | OOS 05 - Foundation Species Are Dying Off All The Time, the World's an Imperfect Place | 3 aquatic talks inside |
+| Tue, Jul 28 | 11:45 AM-1:15 PM | 355A | Special Session | SS 25 - Conservation or Collapse: The Great Salt Lake at an Ecological Crossroads | title match |
+| Tue, Jul 28 | 1:30 PM-3:00 PM | Grand Ballroom D | Symposia | SYMP 05 - Ecology and History: Pathways to Land Healing | 3 aquatic talks inside |
+| Wed, Jul 29 | 8:00 AM-9:30 AM | Grand Ballroom I | Symposia | SYMP 08 - Ecology for All: Harnessing Citizen Science to Advance Ecological Knowledge in an Era of Uncertainty | 2 aquatic talks inside |
+| Wed, Jul 29 | 3:30 PM-5:00 PM | Grand Ballroom H | Inspire Session | INS 09 - Science in Service: Co-Producing Actionable Science for Climate Resilience | 2 aquatic talks inside |
+| Wed, Jul 29 | 3:30 PM-5:00 PM | Grand Ballroom J | Organized Oral Session | OOS 26 - Coastal Wetland Adaptation: A Microbial Perspective on Global Change | title match; 6 aquatic talks inside |
+| Thu, Jul 30 | 11:45 AM-1:15 PM | 254B | Special Session | SS 42 - Think Globally, Act Locally Along What Remains of the Great Salt Lake | title match |
+| Thu, Jul 30 | 1:30 PM-3:00 PM | Grand Ballroom H | Inspire Session | INS 12 - What is Macrosystems Ecology? Meet the Macrosystems Ecology For All (MEFA) Research Coordination Network! | 2 aquatic talks inside |
