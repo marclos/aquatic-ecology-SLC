@@ -6,21 +6,59 @@ This is a small Quarto **website** project with three pages:
 - `detailed.qmd` — every aquatic-ecology talk/poster, sorted by date/time/room
 - `highlevel.qmd` — Symposia/Special/Organized/Workshop/Inspire sessions on aquatic ecology
 
-## Render locally in RStudio
+## Why the Jekyll build failed
 
-1. Put this whole folder somewhere on disk and open it as a Project in RStudio (or just open the folder — RStudio detects `_quarto.yml` and shows a **Build** tab).
-2. Make sure you have the [Quarto CLI](https://quarto.org/docs/get-started/) installed (RStudio ≥ 2022.07 bundles it, but `quarto --version` in the R console/terminal confirms).
-3. In the RStudio **Build** tab, click **Render Website** (or run `quarto render` in the terminal from this folder).
-4. Rendered HTML lands in `docs/` (set via `output-dir: docs` in `_quarto.yml`) — this is the folder GitHub Pages will serve.
-5. Preview locally with `quarto preview` before publishing.
+GitHub Pages (in "Deploy from a branch" mode) just serves whatever static files
+are already sitting in your repo — it never runs Quarto for you. If you push
+the `.qmd` source files without first rendering, there's no `docs/` folder in
+the repo, GitHub's Jekyll step tries to `cd` into it, and you get exactly the
+error you saw (`No such file or directory ... /docs`).
 
-## Publish to GitHub Pages
+There are two ways to fix this. **Option A (GitHub Actions) is recommended** —
+it renders automatically on every push, so you never have to remember to
+render locally again.
 
-1. Push this whole repo (including the rendered `docs/` folder) to GitHub.
-2. In the repo settings → **Pages**, set:
+## Option A: Auto-render with GitHub Actions (recommended)
+
+This repo includes `.github/workflows/publish.yml`, which renders the site
+with Quarto and deploys it on every push to `main`.
+
+1. Push this whole folder (including `.github/workflows/publish.yml`) to your
+   GitHub repo.
+2. In the repo, go to **Settings → Pages** and set:
+   - **Source:** `GitHub Actions` (not "Deploy from a branch")
+3. Push a commit (or go to the **Actions** tab and run the workflow manually)
+   — it will render the site and publish it.
+4. Your site will be live at `https://<username>.github.io/<repo>/`.
+
+With this option you don't need to commit a `docs/` folder at all — Actions
+builds it fresh on GitHub's servers each time. `output-dir: docs` in
+`_quarto.yml` is only used as Actions' internal build location in this setup.
+
+## Option B: Render locally, then push
+
+If you'd rather not use Actions:
+
+1. Open this folder as a Project in RStudio (it detects `_quarto.yml` and
+   adds a **Build** tab), or just use a terminal with Quarto installed.
+2. Click **Render Website** in RStudio's Build tab, or run:
+   ```
+   quarto render
+   ```
+3. Confirm a `docs/` folder now exists and contains `index.html`,
+   `detailed.html`, `highlevel.html`, plus a `.nojekyll` file (Quarto adds
+   this automatically for git-tracked projects, which tells GitHub Pages to
+   skip the Jekyll build entirely).
+4. Commit **both** the source files and the rendered `docs/` folder, and push.
+5. In **Settings → Pages**, set:
    - **Source:** `Deploy from a branch`
-   - **Branch:** `main` (or whichever), folder **`/docs`**
-3. Save — GitHub will publish the site at `https://<username>.github.io/<repo>/` within a minute or two.
-4. Any time you edit a `.qmd` file, re-run `quarto render`, commit the updated `docs/` folder, and push again.
+   - **Branch:** `main`, folder **`/docs`**
+6. Every time you edit a `.qmd` file, re-render, commit the updated `docs/`
+   folder, and push again.
 
-(Alternative: use `quarto publish gh-pages` from the terminal, which creates/updates a `gh-pages` branch for you automatically instead of using the `/docs` folder approach — either works, just pick one.)
+## Local preview
+
+Either way, you can preview before publishing with:
+```
+quarto preview
+```

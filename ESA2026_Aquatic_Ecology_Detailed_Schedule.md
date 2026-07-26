@@ -1,11 +1,4 @@
----
-title: "Detailed Schedule"
-subtitle: "Every aquatic-ecology talk and poster, sorted by date/time/room"
-format:
-  html:
-    df-print: paged
----
-
+# ESA 2026 Annual Meeting: Aquatic Ecology Talks (Detailed Schedule)
 
 Salt Lake City, UT | July 26-30, 2026 | All times MDT
 
